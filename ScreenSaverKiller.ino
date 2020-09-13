@@ -14,6 +14,7 @@
 #include "Mouse.h"
 
 #define MOUSE_MOVE_PIXELS  1
+#define MOUSE_RESPONSE_DELAY 2
 
 void setup() {
   // Take control of the mouse:
@@ -23,28 +24,28 @@ void setup() {
 void loop() {
   // UP
   Mouse.move(0, -MOUSE_MOVE_PIXELS, 0);
-  delay(2);  // response delay of the mouse
+  delay(MOUSE_RESPONSE_DELAY);
   // DOWN
   Mouse.move(0, MOUSE_MOVE_PIXELS, 0);
-  delay(2);  // response delay of the mouse
+  delay(MOUSE_RESPONSE_DELAY);
   // LEFT
   Mouse.move(-MOUSE_MOVE_PIXELS, 0, 0);
-  delay(2);  // response delay of the mouse
+  delay(MOUSE_RESPONSE_DELAY);
   // RIGHT
   Mouse.move(MOUSE_MOVE_PIXELS, 0, 0);
-  delay(2);  // response delay of the mouse
+  delay(MOUSE_RESPONSE_DELAY);
   // DOWN
   Mouse.move(0, MOUSE_MOVE_PIXELS, 0);
-  delay(2);  // response delay of the mouse
+  delay(MOUSE_RESPONSE_DELAY);
   // UP
   Mouse.move(0, -MOUSE_MOVE_PIXELS, 0);
-  delay(2);  // response delay of the mouse
+  delay(MOUSE_RESPONSE_DELAY);
   // RIGHT
   Mouse.move(MOUSE_MOVE_PIXELS, 0, 0);
-  delay(2);  // response delay of the mouse
+  delay(MOUSE_RESPONSE_DELAY);
   // LEFT
   Mouse.move(-MOUSE_MOVE_PIXELS, 0, 0);
-  delay(2);  // response delay of the mouse
+  delay(MOUSE_RESPONSE_DELAY);
   // delay for 30 seconds
   delay(30000);
 }
